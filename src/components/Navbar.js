@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import CartWidget from "./CartWidget"
 
 const Navbar = () => {
   return (
@@ -12,7 +12,14 @@ const Navbar = () => {
               <a href="">Nosotros</a>
               <a href="">Contacto </a>
               <a href="">Redes</a>
+              {/* <li> */}
+                <a>
+                <CartWidget/>
+                </a>
+              {/* </li> */}
+              
             </div>
+            
         </NavContenedor>
     </>
   )
@@ -30,7 +37,7 @@ h2{
   }
 }
 padding: .4rem;
-background-color: #333;
+background-color: #911;
 display: flex;
 align-items: center;
 justify-content: space-between;
